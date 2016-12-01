@@ -1,2 +1,0 @@
-# ForAlgorithms
-210CT

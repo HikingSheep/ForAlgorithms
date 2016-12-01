@@ -1,0 +1,36 @@
+class Graph(object):
+
+      DISPLAY(self):
+          output(g.graph)
+      
+      __init__(self):
+      self.graph <- {}
+      
+      ADDNODE(self,string):
+          if string in g.graph:
+              output(There)
+          else:
+              g.graph[string] <-  []
+              g.DISPLAY()
+      
+      ADDEDGE(self,key,NewValue):
+          value = []
+          
+          if key in g.graph:
+            value <- g.graph[key]
+            if NewValue in value:
+                output(Alredy there)
+            else if NewValue not in g.graph:
+                g.ADDNODE(NewValue)
+                g.ADDEDGE(key,NewValue)
+            else:
+                g.graph[key] = value + [NewValue]
+                g.ADDEDGE(NewValue,key)
+                g.DISPLAY()
+        else:
+            g.ADDNODE(key)
+            g.ADDEDGE(key,NewValue)
+            g.DISPLAY()
+            
+if __name__ = '__main__':
+     g <- Graph()            

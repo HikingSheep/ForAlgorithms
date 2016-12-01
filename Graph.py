@@ -42,6 +42,8 @@ class Graph(object):
             if edge not in visited:
                 visited.extend(edge)
                 stack = stack + g.graph[edge]
+        file = open("GraphDFS.txt", "w")
+        file.write("".join(visited))
         return visited
 
     def bfs(self,startpoint):
@@ -53,6 +55,8 @@ class Graph(object):
             if edge not in visited:
                 visited.extend(edge)
                 stack = stack + g.graph[edge]
+        file = open("GraphBFS.txt", "w")
+        file.write("".join(visited))
         return visited
                 
         

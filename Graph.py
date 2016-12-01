@@ -1,12 +1,10 @@
 class Graph(object):
-    graph = {"A":["B","C"],"B":["A"],"C":["A"]}
-
+    
     def Display(self):
         print(g.graph)
     
-    def _init_(self,key,value):
-        self.key = key
-        self.value = [value]
+    def _init_(self):
+        self.graph = {}
 
     def AddNode(self,string):
         if string in g.graph:

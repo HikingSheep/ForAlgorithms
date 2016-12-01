@@ -1,0 +1,12 @@
+string <- input(string: )
+vowels <- ("a","e","i","o","u","A","E","I","O","U")
+
+REMOVE(string)
+    for letter in string:
+        if string in vowels:
+            string <- replace(letter,"")
+            REMOVE(string)
+    else:
+        return string
+
+output(REMOVE(string))

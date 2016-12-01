@@ -34,14 +34,7 @@ class List(object):
 
 
   def delete(self,n):
-##      if n == self.head:
-##          n.next = n.next.next
-##          n.prev = None
-##      if n == self.tail:
-##          n.next = None   
-##          n.prev.prev = n.prev
-##      else:
-
+    
         if n.prev != None:
           n.prev.next = n.next
         else:
@@ -51,9 +44,6 @@ class List(object):
           n.next.prev = n.prev
         else:
           l.tail = n.prev;
-          
-
-      
 
 if __name__ == '__main__':
   l=List()

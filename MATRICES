@@ -1,0 +1,39 @@
+addition_base <- [[0,0],[0,0]]
+multiplication_base <- [[0,0],[0,0]]
+substraction_base <- [[0,0],[0,0]]
+b <- [[1,2],[3,4]]
+c <- [[5,6],[7,8]]
+
+ADDITION(b,c):
+    for i in range (length(b)):
+        for j in range (length(c[0])):
+            addition_base[i][j] <- b[i][j] + c[i][j]
+    
+    for pair in addition_base:
+          output(pair)
+          
+MULTIPLICATION(b,c):
+    for i in range (length(b)):
+        for j in range (length(c[0])):
+            for k in range (length(c)):
+                  multiplication_base[i][j] +<- b[i][j] * c[i][j]
+    
+    for pair in multiplication_base:
+          output(pair)
+
+
+SUBSTRACTION(b,c):
+    for i in range (length(b)):
+        for j in range (length(c[0])):
+            substraction_base[i][j] <- b[i][j] - c[i][j]
+    
+    for pair in substraction_base:
+          output(pair)
+
+# A = B * C – 2 * (B + C)
+# A = (B * C) – ((B + C) + (B + C))
+
+Output(Addition, ADDITION(b,c))
+Output(Multiplication, MULTIPLICATION(b,c))
+Output(2xAddition, ADDITION(addition_base,addition_base))
+Output(Substraction, SUBSTRACTION(multiplication_base,addition_base))

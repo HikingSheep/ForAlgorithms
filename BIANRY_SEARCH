@@ -1,0 +1,22 @@
+example_array <- [2,3,5,7,9,13]
+BINARY_SEARCH(example_array,low,high):
+    lower <- 0
+    upper <- lenght(example_array)
+    while lower < high:
+        x <- lower + (upper - lower) // 2
+        value <- example_array[x]
+        target <- high - 1
+        if low <= target = value and target <= high:
+              return True
+        else if target > value:
+              if lower <- x:
+                  break
+              lower <- x
+        else if target < value:
+              upper <- x
+    return False
+    
+low <- input(Low: )
+high <- input(High: )
+output(example_array)
+output(BINARY_SEARCH(example_array,low,high))

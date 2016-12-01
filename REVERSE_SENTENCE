@@ -1,0 +1,7 @@
+REVERSE-SENTENCE(sentence):
+    empty_list <- []                       
+    empty_string <- ""                    
+    words <- sentence split()              
+    for word in words:                     
+        empty_list insert (-1, word)       
+    output empty_string join(empty_list)   

@@ -6,4 +6,3 @@ def calc(array):
         e = random.randint(0,elements)
         array[elements],array[e] = array[e],array[elements]
     return array
-#O(n)

@@ -1,0 +1,13 @@
+PERFECT_SQUARE(InputNumber)
+        integer <- 0
+        if(InputNumber >= 0) 
+            while integer * integer < InputNumber
+                integer <- integer + 1
+            if(integer * integer != P)
+                x <- sqrt(InputNumber)
+                x <- floor(x * x)
+                return (output( x is the highest square, input: InputNumber))
+            else
+                return (output( InputNumber is a perfect square number))
+        else
+            output(InputNumber is not a positive number)

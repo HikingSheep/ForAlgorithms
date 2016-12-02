@@ -24,7 +24,7 @@ class Graph(object):
                 g.ADDNODE(NewValue)
                 g.ADDEDGE(key,NewValue)
             else:
-                g.graph[key] = value + [NewValue]
+                g.graph[key] <- value + [NewValue]
                 g.ADDEDGE(NewValue,key)
                 g.DISPLAY()
         else:
@@ -32,5 +32,5 @@ class Graph(object):
             g.ADDEDGE(key,NewValue)
             g.DISPLAY()
             
-if __name__ = '__main__':
+if __name__ <- '__main__':
      g <- Graph()            

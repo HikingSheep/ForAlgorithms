@@ -5,9 +5,9 @@ PRIME_NUMBER(a,InputNumber):
             if a >= InputNumber:
                 output( InputNumber is a prime number)
             else:
-                if InputNumber <- 2:
+                if InputNumber = 2:
                     output( InputNumber is a prime number)
-                else if (InputNumber % a) <- 0:
+                else if (InputNumber % a) = 0:
                     output( InputNumber is not a prime number)
                 else:
                     output( PRIME_NUMBER(a+1,InputNumber))
